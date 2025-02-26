@@ -1,0 +1,39 @@
+id: https://w3id.org/linkml/examples/personinfo
+name: personinfo
+prefixes:
+  linkml: https://w3id.org/linkml/
+  personinfo: https://w3id.org/linkml/examples/personinfo
+imports:
+  - linkml:types
+default_range: string
+default_prefix: personinfo
+
+classes:
+  Person:
+    attributes:
+      # Not required, implicit default value is None.
+      name1:
+
+      # Required, but no default specified.
+      name2:
+        required: true
+
+      # Required, with a default.
+      name3:
+        required: true
+        ifabsent: string(Alan Turing)
+
+      # Not required, implicit default value is None.
+      aliases1:
+        multivalued: true
+
+      # Required, but no default specified.
+      aliases2:
+        multivalued: true
+        required: true
+
+      # Required, with a dummy default value to be replaced later.
+      aliases3:
+        multivalued: true
+        required: true
+        ifabsent: string(aliases3dummy)
