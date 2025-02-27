@@ -17,7 +17,7 @@ For more context, see the following issues:
 ## Setup
 
 1. If you are using Nix flakes, run `nix develop` to install dependencies.
-   Otherwise, ensure you have a modern Python installed (e.g., Python 3.10).
+   Otherwise, ensure you have **Python 3.10** installed.
 
 2. Create a virtual environment with `python -m venv venv` and activate it with
    `. ./venv/bin/activate`.
